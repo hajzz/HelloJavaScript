@@ -13,8 +13,23 @@ const options = {         //создали объeкт со свойствами
     properties: {          //объект внутри объекта со свойствами
         width: 4000,
         height: 2000
+    },
+    objMethod: function (){     
+        console.log('Options method console log');
+        //создаём метод внутри объекта
     }
 };
+options.objMethod(); //вызов метода. синтаксис
+
+const {width, height} = options.properties;//Деструктуризация:
+console.log(width, height);
+//вывод определённых свойств объектa
+
+console.log(Object.keys(options)); 
+// Выводит все ключи содержащиеся в объекте
+console.log(Object.keys(options).length); 
+// Выводит количество содержащихся ключей
+
 
 // console.log(options ['properties'] ['width']);    
 //вывод значения свойства объекта properties в объекте options
