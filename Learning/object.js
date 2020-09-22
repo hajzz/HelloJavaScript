@@ -16,6 +16,12 @@ const options = {         //создали объeкт со свойствами
     }
 };
 
+console.log(Object.keys(options)); 
+// Выводит все ключи содержащиеся в объекте
+console.log(Object.keys(options).length); 
+// Выводит количество содержащихся ключей
+
+
 // console.log(options ['properties'] ['width']);    
 //вывод значения свойства объекта properties в объекте options
 
