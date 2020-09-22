@@ -95,6 +95,7 @@ function writeYourGenres(){
     for (let i = 1; i <= 3; i++){
         const genre = prompt(`Ваш любимый жанр под номером ${1}`);  // Back-tick ` позволяет использовать выражение в строке
         personalMovieDB.genres[i - 1] = genre;                      // i - 1 чтобы началось с нуля
+        // personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${1}`); Как альтернатива
     }
 }
 writeYourGenres();
