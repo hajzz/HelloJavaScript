@@ -26,6 +26,7 @@ function arrangeNumbers(a, b){
 //     console.log(`в массиве  ${array} содержистя значение ${value}  под номером ${index}`);
 // });
 
+
 //метод использутся чаще чем for...of, но плюс его состоит в том что можно использовать break/continue
 
 const str = prompt('type in values separated by comma','');
