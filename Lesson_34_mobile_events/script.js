@@ -13,7 +13,7 @@
 window.addEventListener('DOMContentLoaded', () => {
 
 
-const box =document.querySelector('.box');
+const box = document.querySelector('.box');
 
 box.addEventListener('touchstart', (e) => {
     e.preventDefault();
@@ -40,8 +40,5 @@ box.addEventListener('touchend', (e) => {
     console.log("end");
 
 });
-
-
-l;kjljh;flha'lkfwjbh
 
 });
