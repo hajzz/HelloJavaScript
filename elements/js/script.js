@@ -21,8 +21,10 @@ const wrapperHearts = wrapper.querySelector('.hearts');
 box.style.cssText = 'background-color: blue; width: 800px';
 
 buttons[2].style.borderRadius = '100%';
-hearts[0].style.color = 'black';
-console.log(hearts);
+hearts.forEach(item => {
+    item.style.color  = 'black';
+});
+console.log(hearts[1]);
 
 //----------------------------------------------------
 // // изменение нескольких елементов при помощи цикла

@@ -46,7 +46,7 @@ const deleteElement = (e) => {
 // overlay.addEventListener('click', deleteElement);
 
 // наглядный пример того что всплытие событий проишодит из дом дерева вверх. Т.е сначала на child, потом на parent
-link.addEventListener('click', (event) => {
+link.addEventListener('mouseenter', (event) => {
     event.preventDefault();
     console.log(event.type);
 });
@@ -54,7 +54,7 @@ link.addEventListener('click', (event) => {
 
 //Добавить собые сразу на несколько елементов
 btns.forEach(btn => {
-    btn.addEventListener('click', deleteElement, {once: true});
+    btn.addEventListener('mouseenter', deleteElement, {once: true});
 });
 //btn = название перебираемых кнопок. 
 // в аргументы обработчика события можно добавить объект {once: true}, он означает что обработчик выполнится только 1 раз. 
