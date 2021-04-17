@@ -1,15 +1,16 @@
 "use strict"
 
-const now = new Date();
+const now = new Date(2020, 1, 1);
+const parsedTime = Date.parse(now);
 
-console.log(now.setHours(20));
-console.log(now)
+console.log(parsedTime);
+
 
 
 let start = new Date();
 
 for (let i = 0; i < 1000000; i++){
-    i ** 3
+    let  some = i ** 3
 };
 
 let end = new Date();
